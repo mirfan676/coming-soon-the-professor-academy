@@ -121,13 +121,60 @@
 
     /* mobile */
     @media (max-width:520px){
-      h1{font-size:1.5rem}
-      .logo{width:88px;height:88px;padding:12px}
-      .email{min-width:150px}
-      .container{padding:24px 18px}
-      .card{padding:24px}
-      .whatsapp{padding:9px 12px}
+      /* Mobile adjustments */
+@media (max-width:520px){
+        h1 { 
+            font-size: 1.4rem; /* smaller headline */
+            line-height: 1.3em;
+        }
+
+        p.tag {
+            font-size: 0.9rem;
+            line-height: 1.4em;
+        }
+
+        .container {
+            padding: 20px 12px; /* reduce container padding */
+        }
+
+        .card {
+            padding: 20px;
+            gap: 14px;
+        }
+
+        .logo {
+            width: 80px;
+            height: 80px;
+            padding: 12px;
+            margin-bottom: 12px;
+        }
+
+        form.waitlist {
+            flex-direction: column; /* stack email + button */
+            gap: 10px;
+            width: 100%;
+        }
+
+        .email {
+            min-width: 100%; /* full width input */
+            max-width: 100%;
+            font-size: 0.9rem;
+        }
+
+        .btn {
+            width: 100%; /* full width buttons */
+            font-size: 0.9rem;
+            padding: 10px;
+        }
+
+        .actions {
+            flex-direction: column;
+            gap: 10px;
+        }
+        }
+
     }
+
 
   </style>
 </head>
